@@ -19,6 +19,7 @@
 | 4 | Model Benchmark | `model_benchmark.py` | 4 | `04_model_benchmark.md` |
 | 5 | Real Data Tutorial | `tutorial_real_data.py` | 4 | `05_tutorial.md` |
 | 6 | Demo Pipeline | `demo.py` | 5 | `06_demo.md` |
+| 7 | Core execution | `pipeline.py` | 7 | `07_pipeline.md` |
 
 ## External Surface
 | Type | Identifier | Access Pattern | Auth |
