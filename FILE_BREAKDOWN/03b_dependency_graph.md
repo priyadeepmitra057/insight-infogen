@@ -1,5 +1,68 @@
-*(Split due to length)*
+*(Part 2 of 3 - split due to length)*
 
+**[HIGH RISK]** `tests/test_e2e.py` → `recurring_detector.py` → `schema.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `recurring_detector.py` → `log_utils.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `recurring_detector.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `insight_generator.py` → `contracts.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `insight_generator.py` → `schema.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `logger_factory.py` → `config.py`
+`tests/test_e2e.py` → `pipeline.py` → `model_state.py`
+`tests/test_e2e.py` → `pipeline.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `schema.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `preprocessor.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `preprocessor.py` → `schema.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `preprocessor.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `feature_engineer.py` → `schema.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `seed_labeler.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `seed_labeler.py` → `preprocessor.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `seed_labeler.py` → `preprocessor.py` → `schema.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `seed_labeler.py` → `preprocessor.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `seed_labeler.py` → `schema.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `categorization_model.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `categorization_model.py` → `schema.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `expected_spend_model.py` → `schema.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `anomaly_detector.py` → `schema.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `recurring_detector.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `recurring_detector.py` → `schema.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `recurring_detector.py` → `log_utils.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `recurring_detector.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `insight_model.py` → `schema.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `insight_generator.py` → `contracts.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `insight_generator.py` → `schema.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `known_persons.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `known_persons.py` → `schema.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `known_persons.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `log_utils.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `schema.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `passion_utils.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `candidate.py` → `passion_models.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `banned_content.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `pipeline_result.py` → `candidate.py` → `passion_models.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `pipeline_result.py` → `passion_models.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `contracts.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `schema.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `log_utils.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `marketplace_subcategory.py` → `schema.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `marketplace_subcategory.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `marketplace_subcategory.py` → `passion_utils.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `marketplace_subcategory.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `schema.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `passion_utils.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `marketplace_subcategory.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `marketplace_subcategory.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `passion_models.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `schema.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `contracts.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `passion_models.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `passion_utils.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `banned_content.py`
 **[HIGH RISK]** `tests/test_e2e.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_e2e.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_known_persons.py` → `known_persons.py` → `logger_factory.py` → `config.py`
@@ -15,6 +78,7 @@
 **[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `feature_engineer.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `seed_labeler.py` → `config.py`
 **[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `seed_labeler.py` → `preprocessor.py` → `config.py`
+**[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `seed_labeler.py` → `preprocessor.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `seed_labeler.py` → `preprocessor.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `seed_labeler.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `categorization_model.py` → `config.py`
@@ -42,15 +106,25 @@
 **[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `passion_pipeline.py` → `pipeline_result.py` → `passion_models.py`
 **[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `contracts.py` → `config.py`
 **[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `log_utils.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `passion_pipeline.py` → `marketplace_subcategory.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `passion_pipeline.py` → `marketplace_subcategory.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `passion_pipeline.py` → `marketplace_subcategory.py` → `passion_utils.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `passion_pipeline.py` → `marketplace_subcategory.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `passion_utils.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `marketplace_subcategory.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `marketplace_subcategory.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `passion_models.py`
 **[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `contracts.py` → `config.py`
 **[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `config_passion.py` → `config.py`
 **[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `passion_models.py`
+**[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `passion_utils.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `banned_content.py`
 **[HIGH RISK]** `tests/test_known_persons.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_known_persons.py` → `schema.py` → `logger_factory.py` → `config.py`
@@ -64,6 +138,7 @@
 **[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `feature_engineer.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `seed_labeler.py` → `config.py`
 **[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `seed_labeler.py` → `preprocessor.py` → `config.py`
+**[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `seed_labeler.py` → `preprocessor.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `seed_labeler.py` → `preprocessor.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `seed_labeler.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `categorization_model.py` → `config.py`
@@ -91,15 +166,25 @@
 **[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `passion_pipeline.py` → `pipeline_result.py` → `passion_models.py`
 **[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `contracts.py` → `config.py`
 **[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `log_utils.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `passion_pipeline.py` → `marketplace_subcategory.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `passion_pipeline.py` → `marketplace_subcategory.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `passion_pipeline.py` → `marketplace_subcategory.py` → `passion_utils.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `passion_pipeline.py` → `marketplace_subcategory.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `passion_utils.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `marketplace_subcategory.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `marketplace_subcategory.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `passion_models.py`
 **[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `contracts.py` → `config.py`
 **[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `config_passion.py` → `config.py`
 **[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `passion_models.py`
+**[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `passion_utils.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `banned_content.py`
 **[HIGH RISK]** `tests/test_logging_safety.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `logger_factory.py` → `config.py`
 `tests/test_logging_safety.py` → `recurring_detector.py` → `config.py`
@@ -132,7 +217,9 @@
 **[HIGH RISK]** `tests/test_passion_engine.py` → `passion_pipeline.py` → `passion_detector.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `passion_pipeline.py` → `passion_detector.py` → `config_passion.py` → `config.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `passion_pipeline.py` → `passion_detector.py` → `passion_utils.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_passion_engine.py` → `passion_pipeline.py` → `passion_detector.py` → `marketplace_subcategory.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `passion_pipeline.py` → `passion_detector.py` → `marketplace_subcategory.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tests/test_passion_engine.py` → `passion_pipeline.py` → `passion_detector.py` → `marketplace_subcategory.py` → `passion_utils.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `passion_pipeline.py` → `passion_detector.py` → `marketplace_subcategory.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `passion_pipeline.py` → `passion_detector.py` → `passion_models.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `passion_pipeline.py` → `passion_detector.py` → `logger_factory.py` → `config.py`
@@ -178,6 +265,7 @@
 **[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `feature_engineer.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `seed_labeler.py` → `config.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `seed_labeler.py` → `preprocessor.py` → `config.py`
+**[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `seed_labeler.py` → `preprocessor.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `seed_labeler.py` → `preprocessor.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `seed_labeler.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `categorization_model.py` → `config.py`
@@ -205,15 +293,25 @@
 **[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `passion_pipeline.py` → `pipeline_result.py` → `passion_models.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `contracts.py` → `config.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `log_utils.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `passion_pipeline.py` → `marketplace_subcategory.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `passion_pipeline.py` → `marketplace_subcategory.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `passion_pipeline.py` → `marketplace_subcategory.py` → `passion_utils.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `passion_pipeline.py` → `marketplace_subcategory.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `passion_utils.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `marketplace_subcategory.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `marketplace_subcategory.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `passion_models.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `contracts.py` → `config.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `config_passion.py` → `config.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `passion_models.py`
+**[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `passion_utils.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `banned_content.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_passion_engine.py` → `schema.py` → `logger_factory.py` → `config.py`
@@ -254,6 +352,7 @@
 **[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `feature_engineer.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `seed_labeler.py` → `config.py`
 **[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `seed_labeler.py` → `preprocessor.py` → `config.py`
+**[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `seed_labeler.py` → `preprocessor.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `seed_labeler.py` → `preprocessor.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `seed_labeler.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `categorization_model.py` → `config.py`
@@ -281,15 +380,25 @@
 **[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `passion_pipeline.py` → `pipeline_result.py` → `passion_models.py`
 **[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `contracts.py` → `config.py`
 **[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `log_utils.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `passion_pipeline.py` → `marketplace_subcategory.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `passion_pipeline.py` → `marketplace_subcategory.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `passion_pipeline.py` → `marketplace_subcategory.py` → `passion_utils.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `passion_pipeline.py` → `marketplace_subcategory.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `passion_utils.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `marketplace_subcategory.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `marketplace_subcategory.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `passion_models.py`
 **[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `contracts.py` → `config.py`
 **[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `config_passion.py` → `config.py`
 **[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `passion_models.py`
+**[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `passion_utils.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `banned_content.py`
 **[HIGH RISK]** `tests/test_phase3.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `logger_factory.py` → `config.py`
 `train_and_save_models.py` → `training_data_generator.py` → `config.py`
@@ -309,6 +418,7 @@
 **[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `feature_engineer.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `seed_labeler.py` → `config.py`
 **[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `seed_labeler.py` → `preprocessor.py` → `config.py`
+**[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `seed_labeler.py` → `preprocessor.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `seed_labeler.py` → `preprocessor.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `seed_labeler.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `categorization_model.py` → `config.py`
@@ -336,30 +446,37 @@
 **[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `pipeline_result.py` → `passion_models.py`
 **[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `contracts.py` → `config.py`
 **[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `bootstrap.py` → `log_utils.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `marketplace_subcategory.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `marketplace_subcategory.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `marketplace_subcategory.py` → `passion_utils.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `marketplace_subcategory.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `passion_utils.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `marketplace_subcategory.py` → `config_passion.py` → `config.py`
+**[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `marketplace_subcategory.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `passion_models.py`
 **[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `logger_factory.py` → `config.py`
+**[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `schema.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `contracts.py` → `config.py`
 **[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `config_passion.py` → `config.py`
 **[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `passion_models.py`
+**[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `passion_utils.py` → `logger_factory.py` → `config.py`
 **[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `banned_content.py`
 **[HIGH RISK]** `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `passion_insight_generator.py` → `logger_factory.py` → `config.py`
 
 ## Longest Dependency Chain
-
 `tutorial_real_data.py` → `pipeline.py` → `passion_pipeline.py` → `passion_detector.py` → `marketplace_subcategory.py` → `schema.py` → `logger_factory.py` → `config.py`
 
-*This represents the deepest coupling in the system. Changes at the leaf can trigger rebuilds/re-tests all the way to the root.*
+*This indicates the deepest coupling path.*
 
 ## Circular Dependencies
-
-No circular dependencies detected.
+None detected.
 
 ## Hub Files
-
 | File | Imported-By Count | Who Imports It |
 |------|------------------|---------------|
 | `schema.py` | 27 | marketplace_subcategory.py, tutorial_real_data.py, pipeline.py, recurring_detector.py, anomaly_detector.py, known_persons.py, summary_utils.py, demo.py, bootstrap.py, seed_labeler.py, train_and_save_models.py, insight_generator.py, categorization_model.py, insight_model.py, passion_insight_generator.py, preprocessor.py, feature_engineer.py, expected_spend_model.py, passion_pipeline.py, passion_detector.py, tests/test_ml_integration.py, tests/test_known_persons.py, tests/test_passion_engine.py, tests/test_logging_safety.py, tests/test_phase1.py, tests/test_e2e.py, tests/run_stress_legacy.py |
@@ -373,8 +490,6 @@ No circular dependencies detected.
 | `passion_models.py` | 5 | passion_insight_generator.py, candidate.py, pipeline_result.py, passion_detector.py, tests/test_passion_engine.py |
 
 ## Leaf Files
-
-- `analyzer.py`
 - `banned_content.py`
 - `config.py`
 - `hash_utils.py`
@@ -383,76 +498,72 @@ No circular dependencies detected.
 - `refactor_pipeline.py`
 
 ## Mermaid Diagram
-
 ```mermaid
 graph TD
   subgraph CONFIG
-    banned_content_py[banned_content.py]
-    config_py[config.py (Imported by: 14)]
-    config_passion_py[config_passion.py (Imported by: 6)]
+    banned_content_py["banned_content.py"]
+    config_py["config.py (Imported by: 14)"]
+    config_passion_py["config_passion.py (Imported by: 6)"]
   end
   subgraph CORE_LOGIC
-    recurring_detector_py[recurring_detector.py]
-    anomaly_detector_py[anomaly_detector.py]
-    model_benchmark_py[model_benchmark.py]
-    insight_generator_py[insight_generator.py]
-    categorization_model_py[categorization_model.py]
-    training_data_generator_py[training_data_generator.py]
-    insight_model_py[insight_model.py]
-    passion_insight_generator_py[passion_insight_generator.py]
-    preprocessor_py[preprocessor.py]
-    feature_engineer_py[feature_engineer.py]
-    passion_models_py[passion_models.py (Imported by: 5)]
-    expected_spend_model_py[expected_spend_model.py]
-    passion_detector_py[passion_detector.py]
-    tests_test_model_security_py[tests/test_model_security.py]
+    recurring_detector_py["recurring_detector.py"]
+    anomaly_detector_py["anomaly_detector.py"]
+    model_benchmark_py["model_benchmark.py"]
+    insight_generator_py["insight_generator.py"]
+    categorization_model_py["categorization_model.py"]
+    training_data_generator_py["training_data_generator.py"]
+    insight_model_py["insight_model.py"]
+    passion_insight_generator_py["passion_insight_generator.py"]
+    preprocessor_py["preprocessor.py"]
+    feature_engineer_py["feature_engineer.py"]
+    passion_models_py["passion_models.py (Imported by: 5)"]
+    expected_spend_model_py["expected_spend_model.py"]
+    passion_detector_py["passion_detector.py"]
   end
   subgraph DATA_LAYER
-    marketplace_subcategory_py[marketplace_subcategory.py]
-    known_persons_py[known_persons.py]
-    seed_labeler_py[seed_labeler.py]
-    tests_test_known_persons_py[tests/test_known_persons.py]
+    marketplace_subcategory_py["marketplace_subcategory.py"]
+    known_persons_py["known_persons.py"]
+    seed_labeler_py["seed_labeler.py"]
+    tests_test_known_persons_py["tests/test_known_persons.py"]
   end
   subgraph ENTRYPOINT
-    tutorial_real_data_py[tutorial_real_data.py]
-    pipeline_py[pipeline.py (Imported by: 10)]
-    demo_py[demo.py]
-    bootstrap_py[bootstrap.py]
-    train_and_save_models_py[train_and_save_models.py]
-    passion_pipeline_py[passion_pipeline.py]
+    tutorial_real_data_py["tutorial_real_data.py"]
+    pipeline_py["pipeline.py (Imported by: 10)"]
+    demo_py["demo.py"]
+    bootstrap_py["bootstrap.py"]
+    train_and_save_models_py["train_and_save_models.py"]
+    passion_pipeline_py["passion_pipeline.py"]
   end
   subgraph SCHEMA
-    schema_py[schema.py (Imported by: 27)]
-    contracts_py[contracts.py (Imported by: 5)]
-    model_state_py[model_state.py]
-    candidate_py[candidate.py]
-    pipeline_result_py[pipeline_result.py]
+    schema_py["schema.py (Imported by: 27)"]
+    contracts_py["contracts.py (Imported by: 5)"]
+    model_state_py["model_state.py"]
+    candidate_py["candidate.py"]
+    pipeline_result_py["pipeline_result.py"]
   end
   subgraph TEST
-    tests_run_stress_heavy_py[tests/run_stress_heavy.py]
-    tests_test_phase3_py[tests/test_phase3.py]
-    tests_run_tests_legacy_py[tests/run_tests_legacy.py]
-    tests_test_ml_integration_py[tests/test_ml_integration.py]
-    tests_conftest_py[tests/conftest.py]
-    tests_test_phase2_py[tests/test_phase2.py]
-    tests_test_passion_engine_py[tests/test_passion_engine.py]
-    tests_test_benchmark_py[tests/test_benchmark.py]
-    tests_test_logging_safety_py[tests/test_logging_safety.py]
-    tests_test_phase1_py[tests/test_phase1.py]
-    tests_test_e2e_py[tests/test_e2e.py]
-    tests_run_smoke_py[tests/run_smoke.py]
-    tests_run_stress_legacy_py[tests/run_stress_legacy.py]
-  end
-  subgraph UNKNOWN
-    analyzer_py[analyzer.py]
+    tests_run_stress_heavy_py["tests/run_stress_heavy.py"]
+    tests_test_phase3_py["tests/test_phase3.py"]
+    tests_run_tests_legacy_py["tests/run_tests_legacy.py"]
+    tests_test_ml_integration_py["tests/test_ml_integration.py"]
+    tests_conftest_py["tests/conftest.py"]
+    tests_test_phase2_py["tests/test_phase2.py"]
+    tests_test_passion_engine_py["tests/test_passion_engine.py"]
+    tests_test_benchmark_py["tests/test_benchmark.py"]
+    tests_test_model_security_py["tests/test_model_security.py"]
+    tests_test_logging_safety_py["tests/test_logging_safety.py"]
+    tests_test_phase1_py["tests/test_phase1.py"]
+    tests_test_e2e_py["tests/test_e2e.py"]
+    tests_run_smoke_py["tests/run_smoke.py"]
+    tests_run_stress_legacy_py["tests/run_stress_legacy.py"]
   end
   subgraph UTILITY
-    summary_utils_py[summary_utils.py]
-    logger_factory_py[logger_factory.py (Imported by: 14)]
-    hash_utils_py[hash_utils.py]
-    refactor_pipeline_py[refactor_pipeline.py]
-    log_utils_py[log_utils.py (Imported by: 6)]
-    passion_utils_py[passion_utils.py (Imported by: 5)]
+    summary_utils_py["summary_utils.py"]
+    logger_factory_py["logger_factory.py (Imported by: 14)"]
+    hash_utils_py["hash_utils.py"]
+    refactor_pipeline_py["refactor_pipeline.py"]
+    log_utils_py["log_utils.py (Imported by: 6)"]
+    passion_utils_py["passion_utils.py (Imported by: 5)"]
   end
   marketplace_subcategory_py --> schema_py
   marketplace_subcategory_py --> config_passion_py
@@ -489,126 +600,3 @@ graph TD
   tutorial_real_data_py -.-> passion_insight_generator_py
   pipeline_py --> logger_factory_py
   pipeline_py --> model_state_py
-  pipeline_py --> config_py
-  pipeline_py --> schema_py
-  pipeline_py --> preprocessor_py
-  pipeline_py --> feature_engineer_py
-  pipeline_py --> seed_labeler_py
-  pipeline_py --> categorization_model_py
-  pipeline_py --> expected_spend_model_py
-  pipeline_py --> anomaly_detector_py
-  pipeline_py --> recurring_detector_py
-  pipeline_py --> insight_model_py
-  pipeline_py --> insight_generator_py
-  pipeline_py --> known_persons_py
-  pipeline_py --> log_utils_py
-  pipeline_py --> passion_pipeline_py
-  pipeline_py -.-> contracts_py
-  pipeline_py -.-> config_passion_py
-  pipeline_py -.-> passion_utils_py
-  pipeline_py -.-> candidate_py
-  pipeline_py -.-> passion_models_py
-  pipeline_py -.-> banned_content_py
-  pipeline_py -.-> pipeline_result_py
-  pipeline_py -.-> bootstrap_py
-  pipeline_py -.-> marketplace_subcategory_py
-  pipeline_py -.-> passion_detector_py
-  pipeline_py -.-> passion_insight_generator_py
-  recurring_detector_py --> config_py
-  recurring_detector_py --> schema_py
-  recurring_detector_py --> log_utils_py
-  recurring_detector_py --> logger_factory_py
-  anomaly_detector_py --> schema_py
-  anomaly_detector_py -.-> logger_factory_py
-  anomaly_detector_py -.-> config_py
-  known_persons_py --> logger_factory_py
-  known_persons_py --> schema_py
-  known_persons_py --> config_py
-  summary_utils_py --> schema_py
-  summary_utils_py -.-> logger_factory_py
-  summary_utils_py -.-> config_py
-  demo_py --> schema_py
-  demo_py --> pipeline_py
-  demo_py --> summary_utils_py
-  demo_py -.-> logger_factory_py
-  demo_py -.-> config_py
-  demo_py -.-> model_state_py
-  demo_py -.-> preprocessor_py
-  demo_py -.-> feature_engineer_py
-  demo_py -.-> seed_labeler_py
-  demo_py -.-> categorization_model_py
-  demo_py -.-> expected_spend_model_py
-  demo_py -.-> anomaly_detector_py
-  demo_py -.-> recurring_detector_py
-  demo_py -.-> log_utils_py
-  demo_py -.-> insight_model_py
-  demo_py -.-> insight_generator_py
-  demo_py -.-> contracts_py
-  demo_py -.-> known_persons_py
-  demo_py -.-> passion_pipeline_py
-  demo_py -.-> config_passion_py
-  demo_py -.-> passion_utils_py
-  demo_py -.-> candidate_py
-  demo_py -.-> passion_models_py
-  demo_py -.-> banned_content_py
-  demo_py -.-> pipeline_result_py
-  demo_py -.-> bootstrap_py
-  demo_py -.-> marketplace_subcategory_py
-  demo_py -.-> passion_detector_py
-  demo_py -.-> passion_insight_generator_py
-  bootstrap_py --> contracts_py
-  bootstrap_py --> logger_factory_py
-  bootstrap_py --> schema_py
-  bootstrap_py --> config_passion_py
-  bootstrap_py --> log_utils_py
-  bootstrap_py -.-> config_py
-  schema_py --> logger_factory_py
-  schema_py -.-> config_py
-  seed_labeler_py --> config_py
-  seed_labeler_py --> preprocessor_py
-  seed_labeler_py --> schema_py
-  seed_labeler_py -.-> logger_factory_py
-  contracts_py --> config_py
-  model_benchmark_py --> training_data_generator_py
-  model_benchmark_py -.-> config_py
-  model_benchmark_py -.-> contracts_py
-  train_and_save_models_py --> training_data_generator_py
-  train_and_save_models_py --> insight_model_py
-  train_and_save_models_py --> schema_py
-  train_and_save_models_py -.-> config_py
-  train_and_save_models_py -.-> contracts_py
-  train_and_save_models_py -.-> logger_factory_py
-  logger_factory_py --> config_py
-  insight_generator_py --> contracts_py
-  insight_generator_py --> schema_py
-  insight_generator_py -.-> config_py
-  insight_generator_py -.-> logger_factory_py
-  categorization_model_py --> config_py
-  categorization_model_py --> schema_py
-  categorization_model_py -.-> logger_factory_py
-  training_data_generator_py --> config_py
-  training_data_generator_py --> contracts_py
-  insight_model_py --> schema_py
-  insight_model_py -.-> logger_factory_py
-  insight_model_py -.-> config_py
-  passion_insight_generator_py --> schema_py
-  passion_insight_generator_py --> contracts_py
-  passion_insight_generator_py --> config_passion_py
-  passion_insight_generator_py --> passion_models_py
-  passion_insight_generator_py --> passion_utils_py
-  passion_insight_generator_py --> banned_content_py
-  passion_insight_generator_py --> logger_factory_py
-  passion_insight_generator_py -.-> config_py
-  preprocessor_py --> config_py
-  preprocessor_py --> schema_py
-  preprocessor_py --> logger_factory_py
-  config_passion_py --> config_py
-  log_utils_py --> logger_factory_py
-  log_utils_py -.-> config_py
-  feature_engineer_py --> schema_py
-  feature_engineer_py -.-> logger_factory_py
-  feature_engineer_py -.-> config_py
-  passion_utils_py --> logger_factory_py
-  passion_utils_py -.-> config_py
-  candidate_py --> passion_models_py
-  pipeline_result_py --> candidate_py

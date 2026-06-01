@@ -12,23 +12,23 @@
 - **Transitive internal**:
   - none
 - **Direct external**:
-  - `unicodedata` → [*]
+  - none
 - **Runtime / injected deps**: none
 
 #### Identity
 - **Role**: CONFIG
-- **Purpose**: Defines lists of banned words or content rules.
+- **Purpose**: Stores configuration values, thresholds, and static lists.
 
 #### Exports
-- `BANNED_PATTERN` (constant/variable)
-- `_CONFUSABLES` (constant/variable)
+- `BANNED_PATTERN` (constant)
+- `_CONFUSABLES` (constant)
 - `_normalize_display_text` (function)
-- `_COMPACT_SAFE_TERMS` (constant/variable)
-- `_SEP` (constant/variable)
+- `_COMPACT_SAFE_TERMS` (constant)
+- `_SEP` (constant)
 - `_obfuscated_word_pattern` (function)
-- `_OBFUSCATED_SAFE_PATTERN` (constant/variable)
+- `_OBFUSCATED_SAFE_PATTERN` (constant)
 - `contains_banned_content` (function)
-- `__all__` (constant/variable)
+- `__all__` (constant)
 
 #### Side Effects
 none
@@ -51,26 +51,26 @@ none
 - **Purpose**: Stores configuration values, thresholds, and static lists.
 
 #### Exports
-- `LOG_LEVEL` (constant/variable)
-- `VALID_LOG_LEVELS` (constant/variable)
-- `ENABLE_CRASH_DUMPS` (constant/variable)
-- `CRASH_DUMP_DIR` (constant/variable)
-- `ENABLE_PII_DEBUG_LOGS` (constant/variable)
-- `HIGH_PRIORITY` (constant/variable)
-- `MEDIUM_PRIORITY` (constant/variable)
-- `LOW_PRIORITY` (constant/variable)
-- `CATEGORY_PRIORITY` (constant/variable)
-- `TIER_MAPPING` (constant/variable)
-- `CREDIT_PRIORITY` (constant/variable)
-- `FALLBACK_DEBIT_LABEL` (constant/variable)
-- `FALLBACK_CREDIT_LABEL` (constant/variable)
-- `MIN_COVERAGE_THRESHOLD` (constant/variable)
-- `RECURRING_CONFIG` (constant/variable)
+- `LOG_LEVEL` (constant)
+- `VALID_LOG_LEVELS` (constant)
+- `ENABLE_CRASH_DUMPS` (constant)
+- `CRASH_DUMP_DIR` (constant)
+- `ENABLE_PII_DEBUG_LOGS` (constant)
+- `HIGH_PRIORITY` (constant)
+- `MEDIUM_PRIORITY` (constant)
+- `LOW_PRIORITY` (constant)
+- `CATEGORY_PRIORITY` (constant)
+- `TIER_MAPPING` (constant)
+- `CREDIT_PRIORITY` (constant)
+- `FALLBACK_DEBIT_LABEL` (constant)
+- `FALLBACK_CREDIT_LABEL` (constant)
+- `MIN_COVERAGE_THRESHOLD` (constant)
+- `RECURRING_CONFIG` (constant)
 - `lookup_matching_tip_ids` (function)
-- `KNOWN_PERSON_MATCH_THRESHOLD` (constant/variable)
-- `CONCAT_MIN_LENGTH` (constant/variable)
-- `CONCAT_PARTIAL_MIN_LENGTH` (constant/variable)
-- `MIN_SPEND_TRANSACTIONS_FOR_ML` (constant/variable)
+- `KNOWN_PERSON_MATCH_THRESHOLD` (constant)
+- `CONCAT_MIN_LENGTH` (constant)
+- `CONCAT_PARTIAL_MIN_LENGTH` (constant)
+- `MIN_SPEND_TRANSACTIONS_FOR_ML` (constant)
 
 #### Side Effects
 none
@@ -85,7 +85,7 @@ none
 - **Transitive internal**:
   - none
 - **Direct external**:
-  - `types` → [MappingProxyType]
+  - none
 - **Runtime / injected deps**: none
 
 #### Identity
@@ -93,13 +93,13 @@ none
 - **Purpose**: Stores configuration values, thresholds, and static lists.
 
 #### Exports
-- `_CORE_ALIASES` (constant/variable)
-- `_PASSION_EXTRAS` (constant/variable)
-- `_NORMALIZED_EXTRAS` (constant/variable)
-- `_ALIAS_CONFLICTS` (constant/variable)
+- `_CORE_ALIASES` (constant)
+- `_PASSION_EXTRAS` (constant)
+- `_NORMALIZED_EXTRAS` (constant)
+- `_ALIAS_CONFLICTS` (constant)
 - `validate_merchant_aliases` (function)
 - `validate_config` (function)
-- `__all__` (constant/variable)
+- `__all__` (constant)
 
 #### Side Effects
 none
@@ -114,10 +114,10 @@ none
 - **Direct internal**:
   - `schema.py` → [Col, require_columns]
 - **Transitive internal**:
-  - `logger_factory.py` (via `schema.py`)
-  - `config.py` (via `schema.py`)
+  - `config.py` (via `schema.py`) → [module/symbols used indirectly]
+  - `logger_factory.py` (via `schema.py`) → [module/symbols used indirectly]
 - **Direct external**:
-  - `pandas` → [*]
+  - `pandas` → [module]
 - **Runtime / injected deps**: none
 
 #### Identity
@@ -128,7 +128,7 @@ none
 - `detect_anomalies` (function)
 
 #### Side Effects
-none
+file I/O
 
 ---
 
@@ -139,10 +139,10 @@ none
   - `config.py` → [FALLBACK_DEBIT_LABEL, FALLBACK_CREDIT_LABEL]
   - `schema.py` → [Col, require_columns]
 - **Transitive internal**:
-  - `logger_factory.py` (via `schema.py`)
+  - `logger_factory.py` (via `schema.py`) → [module/symbols used indirectly]
 - **Direct external**:
-  - `pandas` → [*]
-  - `sklearn` → [Pipeline, LogisticRegression, TfidfVectorizer, ColumnTransformer, StandardScaler]
+  - `pandas` → [module]
+  - `sklearn` → [Pipeline, StandardScaler, LogisticRegression, ColumnTransformer, TfidfVectorizer]
 - **Runtime / injected deps**: none
 
 #### Identity
@@ -155,7 +155,7 @@ none
 - `predict_categories` (function)
 
 #### Side Effects
-none
+file I/O
 
 ---
 
@@ -165,12 +165,12 @@ none
 - **Direct internal**:
   - `schema.py` → [Col, require_columns]
 - **Transitive internal**:
-  - `logger_factory.py` (via `schema.py`)
-  - `config.py` (via `schema.py`)
+  - `config.py` (via `schema.py`) → [module/symbols used indirectly]
+  - `logger_factory.py` (via `schema.py`) → [module/symbols used indirectly]
 - **Direct external**:
-  - `pandas` → [*]
-  - `numpy` → [*]
-  - `sklearn` → [RidgeCV, Pipeline, ColumnTransformer, OneHotEncoder, StandardScaler]
+  - `numpy` → [module]
+  - `pandas` → [module]
+  - `sklearn` → [RidgeCV, Pipeline, StandardScaler, OneHotEncoder, ColumnTransformer]
 - **Runtime / injected deps**: none
 
 #### Identity
@@ -183,7 +183,7 @@ none
 - `predict_expected_spend` (function)
 
 #### Side Effects
-none
+file I/O
 
 ---
 
@@ -193,11 +193,11 @@ none
 - **Direct internal**:
   - `schema.py` → [Col, require_columns]
 - **Transitive internal**:
-  - `logger_factory.py` (via `schema.py`)
-  - `config.py` (via `schema.py`)
+  - `config.py` (via `schema.py`) → [module/symbols used indirectly]
+  - `logger_factory.py` (via `schema.py`) → [module/symbols used indirectly]
 - **Direct external**:
-  - `numpy` → [*]
-  - `pandas` → [*]
+  - `numpy` → [module]
+  - `pandas` → [module]
 - **Runtime / injected deps**: none
 
 #### Identity
@@ -205,7 +205,7 @@ none
 - **Purpose**: Generates machine learning features.
 
 #### Exports
-- `ZSCORE_CLIP` (constant/variable)
+- `ZSCORE_CLIP` (constant)
 - `add_time_features` (function)
 - `add_rolling_features` (function)
 - `fill_rolling_nulls` (function)
@@ -214,7 +214,7 @@ none
 - `engineer_features_inference` (function)
 
 #### Side Effects
-none
+file I/O
 
 ---
 
@@ -222,13 +222,13 @@ none
 
 #### Dependencies
 - **Direct internal**:
-  - `contracts.py` → [TIP_CORPUS, INSIGHT_TEMPLATES, lookup_matching_tip_ids]
+  - `contracts.py` → [lookup_matching_tip_ids, INSIGHT_TEMPLATES, TIP_CORPUS]
   - `schema.py` → [Col, require_columns]
 - **Transitive internal**:
-  - `config.py` (via `contracts.py`)
-  - `logger_factory.py` (via `schema.py`)
+  - `config.py` (via `contracts.py`) → [module/symbols used indirectly]
+  - `logger_factory.py` (via `schema.py`) → [module/symbols used indirectly]
 - **Direct external**:
-  - `pandas` → [*]
+  - `pandas` → [module]
 - **Runtime / injected deps**: none
 
 #### Identity
@@ -240,7 +240,7 @@ none
 - `generate_human_insights` (function)
 
 #### Side Effects
-network calls
+network calls, file I/O
 
 ---
 
@@ -250,10 +250,10 @@ network calls
 - **Direct internal**:
   - `schema.py` → [Col, require_columns]
 - **Transitive internal**:
-  - `logger_factory.py` (via `schema.py`)
-  - `config.py` (via `schema.py`)
+  - `config.py` (via `schema.py`) → [module/symbols used indirectly]
+  - `logger_factory.py` (via `schema.py`) → [module/symbols used indirectly]
 - **Direct external**:
-  - `pandas` → [*]
+  - `pandas` → [module]
   - `sklearn` → [Pipeline]
 - **Runtime / injected deps**: none
 
@@ -262,9 +262,9 @@ network calls
 - **Purpose**: Generates insights from categorized transactions.
 
 #### Exports
-- `NUMERIC_FEATURES` (constant/variable)
-- `CATEGORICAL_FEATURES` (constant/variable)
-- `_MODELS_DIR` (constant/variable)
+- `NUMERIC_FEATURES` (constant)
+- `CATEGORICAL_FEATURES` (constant)
+- `_MODELS_DIR` (constant)
 - `ModelSecurityError` (class)
 - `_compute_checksum` (function)
 - `_verify_checksum` (function)
@@ -283,15 +283,15 @@ file I/O (open/print), file I/O
 - **Direct internal**:
   - `training_data_generator.py` → [generate_insight_dataset]
 - **Transitive internal**:
-  - `config.py` (via `training_data_generator.py`)
-  - `contracts.py` (via `training_data_generator.py`)
+  - `config.py` (via `training_data_generator.py`) → [module/symbols used indirectly]
+  - `contracts.py` (via `training_data_generator.py`) → [module/symbols used indirectly]
 - **Direct external**:
-  - `numpy` → [*]
-  - `pandas` → [*]
-  - `sklearn` → [MLPClassifier, accuracy_score, DecisionTreeClassifier, AdaBoostClassifier, precision_score, Pipeline, CalibratedClassifierCV, KNeighborsClassifier, recall_score, LogisticRegression, GradientBoostingClassifier, LabelEncoder, StandardScaler, classification_report, confusion_matrix, f1_score, RandomForestClassifier, ColumnTransformer, OneHotEncoder, LinearSVC, StratifiedKFold, ExtraTreesClassifier, cross_validate]
-  - `xgboost` → [XGBClassifier]
-  - `lightgbm` → [LGBMClassifier]
   - `catboost` → [CatBoostClassifier]
+  - `lightgbm` → [LGBMClassifier]
+  - `numpy` → [module]
+  - `pandas` → [module]
+  - `sklearn` → [recall_score, StandardScaler, classification_report, precision_score, accuracy_score, AdaBoostClassifier, OneHotEncoder, LogisticRegression, ColumnTransformer, f1_score, KNeighborsClassifier, DecisionTreeClassifier, CalibratedClassifierCV, RandomForestClassifier, ExtraTreesClassifier, StratifiedKFold, MLPClassifier, LabelEncoder, LinearSVC, GradientBoostingClassifier, Pipeline, cross_validate, confusion_matrix]
+  - `xgboost` → [XGBClassifier]
 - **Runtime / injected deps**: none
 
 #### Identity
@@ -310,7 +310,7 @@ file I/O (open/print), file I/O
 - `main` (function)
 
 #### Side Effects
-file I/O (open/print), network calls
+file I/O (open/print), network calls, file I/O
 
 ---
 
@@ -318,17 +318,17 @@ file I/O (open/print), network calls
 
 #### Dependencies
 - **Direct internal**:
-  - `schema.py` → [Col]
-  - `config_passion.py` → [PASSION_MIN_MONTHS, PASSION_ANOMALY_SUPPRESSION_THRESHOLD, DISTRESS_FEES_THRESHOLD, PASSION_MERCHANT_COUNT_MIN, PASSION_SPEND_SHARE_THRESHOLD]
-  - `passion_utils.py` → [sanitize_mask, _safe_isna, safe_numeric, assert_columns_exist, coerce_bool_column]
+  - `config_passion.py` → [PASSION_ANOMALY_SUPPRESSION_THRESHOLD, DISTRESS_FEES_THRESHOLD, PASSION_SPEND_SHARE_THRESHOLD, PASSION_MIN_MONTHS, PASSION_MERCHANT_COUNT_MIN]
+  - `logger_factory.py` → [get_logger]
   - `marketplace_subcategory.py` → [resolve_merchant_vectorized]
   - `passion_models.py` → [PassionSignal]
-  - `logger_factory.py` → [get_logger]
+  - `passion_utils.py` → [assert_columns_exist, sanitize_mask, safe_numeric, _safe_isna, coerce_bool_column]
+  - `schema.py` → [Col]
 - **Transitive internal**:
-  - `config.py` (via `schema.py`)
+  - `config.py` (via `schema.py`) → [module/symbols used indirectly]
 - **Direct external**:
-  - `numpy` → [*]
-  - `pandas` → [*]
+  - `numpy` → [module]
+  - `pandas` → [module]
 - **Runtime / injected deps**: none
 
 #### Identity
@@ -336,9 +336,9 @@ file I/O (open/print), network calls
 - **Purpose**: Detects passion or specialized categories.
 
 #### Exports
-- `__all__` (constant/variable)
-- `_FEE_KEYWORDS` (constant/variable)
-- `_FEE_PATTERN` (constant/variable)
+- `__all__` (constant)
+- `_FEE_KEYWORDS` (constant)
+- `_FEE_PATTERN` (constant)
 - `_safe_coerce_anomaly` (function)
 - `_check_distress_gate` (function)
 - `_check_anomaly_suppression` (function)
@@ -347,7 +347,7 @@ file I/O (open/print), network calls
 - `detect_passions` (function)
 
 #### Side Effects
-network calls
+network calls, file I/O
 
 ---
 
@@ -355,15 +355,15 @@ network calls
 
 #### Dependencies
 - **Direct internal**:
-  - `schema.py` → [Col]
-  - `contracts.py` → [TIP_CORPUS, INSIGHT_TEMPLATES, lookup_matching_tip_ids]
+  - `banned_content.py` → [contains_banned_content]
   - `config_passion.py` → [PASSION_INSIGHT_TEMPLATES]
+  - `contracts.py` → [lookup_matching_tip_ids, INSIGHT_TEMPLATES, TIP_CORPUS]
+  - `logger_factory.py` → [get_logger]
   - `passion_models.py` → [PassionSignal]
   - `passion_utils.py` → [validate_template_values]
-  - `banned_content.py` → [contains_banned_content]
-  - `logger_factory.py` → [get_logger]
+  - `schema.py` → [Col]
 - **Transitive internal**:
-  - `config.py` (via `schema.py`)
+  - `config.py` (via `schema.py`) → [module/symbols used indirectly]
 - **Direct external**:
   - none
 - **Runtime / injected deps**: none
@@ -373,7 +373,7 @@ network calls
 - **Purpose**: Generates insights from categorized transactions.
 
 #### Exports
-- `__all__` (constant/variable)
+- `__all__` (constant)
 - `_select_tip` (function)
 - `_render_candidate` (function)
 - `generate_passion_insights` (function)
@@ -391,8 +391,7 @@ network calls
 - **Transitive internal**:
   - none
 - **Direct external**:
-  - `__future__` → [annotations]
-  - `numpy` → [*]
+  - `numpy` → [module]
 - **Runtime / injected deps**: none
 
 #### Identity
@@ -400,8 +399,8 @@ network calls
 - **Purpose**: Contains core business logic, statistical methods, or ML inference.
 
 #### Exports
-- `__all__` (constant/variable)
-- `_EPS` (constant/variable)
+- `__all__` (constant)
+- `_EPS` (constant)
 - `PassionSignal` (class)
 
 #### Side Effects
@@ -413,14 +412,14 @@ none
 
 #### Dependencies
 - **Direct internal**:
-  - `config.py` → [GENERIC_ROUTER_ALIASES, SPECIFIC_MERCHANT_ALIASES, NOISE_TOKENS]
-  - `schema.py` → [Col, require_columns, coerce_and_validate_types]
+  - `config.py` → [SPECIFIC_MERCHANT_ALIASES, NOISE_TOKENS, GENERIC_ROUTER_ALIASES]
   - `logger_factory.py` → [get_logger]
+  - `schema.py` → [Col, coerce_and_validate_types, require_columns]
 - **Transitive internal**:
   - none
 - **Direct external**:
-  - `pandas` → [*]
-  - `numpy` → [*]
+  - `numpy` → [module]
+  - `pandas` → [module]
 - **Runtime / injected deps**: none
 
 #### Identity
@@ -428,10 +427,10 @@ none
 - **Purpose**: Contains core business logic, statistical methods, or ML inference.
 
 #### Exports
-- `_LONG_DIGIT_PATTERN` (constant/variable)
-- `_EMAIL_PATTERN` (constant/variable)
-- `_SPECIAL_CHAR_PATTERN` (constant/variable)
-- `_MULTI_SPACE_PATTERN` (constant/variable)
+- `_LONG_DIGIT_PATTERN` (constant)
+- `_EMAIL_PATTERN` (constant)
+- `_SPECIAL_CHAR_PATTERN` (constant)
+- `_MULTI_SPACE_PATTERN` (constant)
 - `validate_schema` (function)
 - `_parse_and_sort_dates` (function)
 - `_normalize_flag` (function)
@@ -444,7 +443,7 @@ none
 - `preprocess` (function)
 
 #### Side Effects
-none
+file I/O
 
 ---
 
@@ -452,15 +451,15 @@ none
 
 #### Dependencies
 - **Direct internal**:
-  - `config.py` → [*, RECURRING_CONFIG]
-  - `schema.py` → [Col, require_columns]
+  - `config.py` → [module, RECURRING_CONFIG]
   - `log_utils.py` → [log_safe_merchant]
   - `logger_factory.py` → [get_logger]
+  - `schema.py` → [Col, require_columns]
 - **Transitive internal**:
   - none
 - **Direct external**:
-  - `pandas` → [*]
-  - `numpy` → [*]
+  - `numpy` → [module]
+  - `pandas` → [module]
 - **Runtime / injected deps**: none
 
 #### Identity
@@ -471,36 +470,7 @@ none
 - `find_recurring_transactions` (function)
 
 #### Side Effects
-none
-
----
-
-### `tests/test_model_security.py`
-
-#### Dependencies
-- **Direct internal**:
-  - `insight_model.py` → [load_insight_ranker, _verify_checksum, _compute_checksum, *, _MODELS_DIR, ModelSecurityError, _validate_model_path]
-- **Transitive internal**:
-  - `schema.py` (via `insight_model.py`)
-  - `logger_factory.py` (via `insight_model.py`)
-  - `config.py` (via `insight_model.py`)
-- **Direct external**:
-  - `pytest` → [*]
-- **Runtime / injected deps**: none
-
-#### Identity
-- **Role**: CORE_LOGIC
-- **Purpose**: Contains core business logic, statistical methods, or ML inference.
-
-#### Exports
-- `tmp_models_dir` (function)
-- `TestChecksumComputation` (class)
-- `TestChecksumVerification` (class)
-- `TestPathValidation` (class)
-- `TestLoadInsightRanker` (class)
-
-#### Side Effects
-file I/O (open/print)
+file I/O
 
 ---
 
@@ -508,13 +478,13 @@ file I/O (open/print)
 
 #### Dependencies
 - **Direct internal**:
-  - `config.py` → [INSIGHT_TYPES, lookup_matching_tip_ids, CATEGORY_PRIORITY]
+  - `config.py` → [lookup_matching_tip_ids, INSIGHT_TYPES, CATEGORY_PRIORITY]
   - `contracts.py` → [TIP_CORPUS]
 - **Transitive internal**:
   - none
 - **Direct external**:
-  - `numpy` → [*]
-  - `pandas` → [*]
+  - `numpy` → [module]
+  - `pandas` → [module]
   - `sklearn` → [train_test_split]
 - **Runtime / injected deps**: none
 
@@ -530,7 +500,7 @@ file I/O (open/print)
 - `generate_insight_dataset` (function)
 
 #### Side Effects
-network calls
+network calls, file I/O
 
 ---
 
@@ -540,25 +510,25 @@ network calls
 
 #### Dependencies
 - **Direct internal**:
+  - `config.py` → [module]
   - `logger_factory.py` → [get_logger]
   - `schema.py` → [Col]
-  - `config.py` → [*]
 - **Transitive internal**:
   - none
 - **Direct external**:
-  - `pandas` → [*]
+  - `pandas` → [module]
 - **Runtime / injected deps**: none
 
 #### Identity
 - **Role**: DATA_LAYER
-- **Purpose**: Manages data for known persons or entities.
+- **Purpose**: Manages data retrieval, labeling, or enrichment.
 
 #### Exports
-- `_NAME_NOISE_TOKENS` (constant/variable)
-- `_MERCHANT_INDICATOR_TOKENS` (constant/variable)
-- `_MERCHANT_SUFFIXES` (constant/variable)
-- `_TRANSFER_CONTEXT_TOKENS` (constant/variable)
-- `_SEPARATOR_PATTERN` (constant/variable)
+- `_NAME_NOISE_TOKENS` (constant)
+- `_MERCHANT_INDICATOR_TOKENS` (constant)
+- `_MERCHANT_SUFFIXES` (constant)
+- `_TRANSFER_CONTEXT_TOKENS` (constant)
+- `_SEPARATOR_PATTERN` (constant)
 - `SignalBundle` (class)
 - `_extract_signals` (function)
 - `_is_contiguous_subsequence` (function)
@@ -574,7 +544,7 @@ network calls
 - `detect_personal_patterns` (function)
 
 #### Side Effects
-network calls
+network calls, file I/O
 
 ---
 
@@ -582,16 +552,15 @@ network calls
 
 #### Dependencies
 - **Direct internal**:
-  - `schema.py` → [Col]
-  - `config_passion.py` → [ELECTRONICS_ALLOWED_CATEGORIES, PASSION_MERCHANT_ALIASES, MARKETPLACE_LOW_CONFIDENCE, MARKETPLACE_HIGH_CONFIDENCE, MARKETPLACE_HIGH_AMOUNT_THRESHOLD, GENERALIST_CANONICALS]
-  - `passion_utils.py` → [assert_columns_exist, coerce_bool_column, safe_numeric]
+  - `config_passion.py` → [MARKETPLACE_HIGH_CONFIDENCE, PASSION_MERCHANT_ALIASES, ELECTRONICS_ALLOWED_CATEGORIES, MARKETPLACE_HIGH_AMOUNT_THRESHOLD, MARKETPLACE_LOW_CONFIDENCE, GENERALIST_CANONICALS]
   - `logger_factory.py` → [get_logger]
+  - `passion_utils.py` → [safe_numeric, coerce_bool_column, assert_columns_exist]
+  - `schema.py` → [Col]
 - **Transitive internal**:
-  - `config.py` (via `schema.py`)
+  - `config.py` (via `schema.py`) → [module/symbols used indirectly]
 - **Direct external**:
-  - `pandas` → [*]
-  - `numpy` → [*]
-  - `types` → [MappingProxyType]
+  - `numpy` → [module]
+  - `pandas` → [module]
 - **Runtime / injected deps**: none
 
 #### Identity
@@ -599,12 +568,44 @@ network calls
 - **Purpose**: Manages data retrieval, labeling, or enrichment.
 
 #### Exports
-- `__all__` (constant/variable)
-- `_ALIAS_PATTERN` (constant/variable)
+- `__all__` (constant)
+- `_ALIAS_PATTERN` (constant)
 - `resolve_merchant_vectorized` (function)
 - `enrich_subcategories` (function)
 
 #### Side Effects
-network calls
+network calls, file I/O
+
+---
+
+### `seed_labeler.py`
+
+#### Dependencies
+- **Direct internal**:
+  - `config.py` → [TIER_MAPPING, CREDIT_PRIORITY, CREDIT_KEYWORDS, CATEGORY_KEYWORDS, CATEGORY_PRIORITY, FALLBACK_DEBIT_LABEL, MIN_COVERAGE_THRESHOLD, FALLBACK_CREDIT_LABEL]
+  - `preprocessor.py` → [normalize]
+  - `schema.py` → [Col, require_columns]
+- **Transitive internal**:
+  - `logger_factory.py` (via `preprocessor.py`) → [module/symbols used indirectly]
+- **Direct external**:
+  - `pandas` → [module]
+- **Runtime / injected deps**: none
+
+#### Identity
+- **Role**: DATA_LAYER
+- **Purpose**: Manages data retrieval, labeling, or enrichment.
+
+#### Exports
+- `CompiledKeyword` (class)
+- `_compile_keywords` (function)
+- `_match_remark` (function)
+- `_DEFAULT_DEBIT_KWS` (constant)
+- `_DEFAULT_CREDIT_KWS` (constant)
+- `_log_coverage` (function)
+- `label_debits` (function)
+- `label_credits` (function)
+
+#### Side Effects
+file I/O
 
 ---
